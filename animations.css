@@ -1,0 +1,44 @@
+/* Анимация плавного появления */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+/* Анимация скольжения справа */
+.slide-in-right {
+    animation: slide-in-right 1s ease-in-out;
+}
+
+@keyframes slide-in-right {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Анимация скольжения слева */
+.slide-in-left {
+    animation: slide-in-left 1s ease-in-out;
+}
+
+@keyframes slide-in-left {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+body{
+    margin: 0;
+    text-align: center;
+    font-family: Verdana;
+    background-color: rgba(255,148,7,0.35);
+}
+input[type=radio] {
+    display: none;
+}
+label{
+    width: 23%;
+    float: left;
+    text-align: center;
+    box-shadow: ;
+}

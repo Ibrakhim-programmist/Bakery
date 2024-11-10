@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th = "http://www.thymeleaf.org" layout:decorate="structure.html">
+<div layout:fragment="SiteContent" >
+
+   <div class="d-flex justify-content-evenly">
+   <h1   style="color: rgba(255,148,7,0.56)" >Welcome To I_Bakery</h1>
+   </div>
+
+
+
+   <div class="d-flex justify-content-evenly">
+      <div class="slide-in-right">
+         <div>
+      <img src="https://ampravda.ru/files/articles-2/83049/dh4419ndo5xb.jpg" alt="Nan" style="width: 400px;
+      height:250px; margin-top: 50px">
+         </div>
+      </div>
+   </div>
+<div id="myFadeElement" class="fade-in">
+   <p style="margin-top: 50px" id="2">
+      <strong>Are you craving a delicious treat but don’t have the time or energy to bake?</strong> Look no further than
+      I_Bakery, your go-to online bakery for freshly baked goodness. We offer a wide selection of mouthwatering
+      pastries, cakes, cookies, and more, all made with the finest ingredients and crafted with love.
+      From classic favorites like chocolate chip cookies and red velvet cake to unique and innovative creations,
+      we have something for every taste. Whether you’re celebrating a special occasion or just need a little pick-me-up,
+      our baked goods are sure to satisfy your sweet tooth.
+      At I_Bakery, we believe in using high-quality ingredients and traditional baking techniques to create the best
+      possible products. Our team of skilled bakers is passionate about their craft and takes pride in every baked item
+      we create.
+      <i>Ordering from I_Bakery is easy and convenient. Simply browse our online store, choose your favorites, and place
+      your order. We offer prompt delivery services, so you can enjoy your treats fresh and ready to eat.
+      We also offer custom orders for special occasions. Let us help you create a cake or other dessert
+      that is perfect for your event. We’ll work with you to design a masterpiece that will leave your guests amazed.
+         Visit our website today and discover a world of deliciousness at I_Bakery</i>
+   </p>
+</div>
+<div style="text-align: center;margin-bottom: 450px">
+   <div data-bs-spy="scroll" data-bs-target="#navvv"
+        data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"
+   style="margin-top: 50px">
+   <h1 id="1" style="color: rgba(255,148,7,0.56); margin-top: 450px">Types of baking</h1>
+   </div>
+   <h1>↓</h1>
+
+
+
+   <div class="d-flex justify-content-evenly"  style="margin-top: 50px; text-align: center">
+
+      <div class="slide-in-right">
+
+         <div><h4>Nan</h4></div>
+         <a th:href="@{'/nan'}">
+      <img src="https://g-bread.ru/upload/iblock/999/kakoy-khleb-poleznee-rzhanoy-ili-pshenichnyy-3.jpg"
+           class="shadow" alt="Nan" style="width: 300px; height: 200px;">
+         </a>
+   </div>
+
+      <div class="slide-in-right">
+         <div><h4>Pie</h4></div>
+      <a th:href="@{'/pie'}">
+         <img src="https://cdn.lifehacker.ru/wp-content/uploads/2020/02/Depositphotos_129564120_xl-2015_1580984960-e1580985124318.jpg"
+           class="shadow"  alt="Nan" style="width: 300px; height: 200px;">
+      </a>
+   </div>
+
+      <div class="slide-in-right">
+         <div><h4>Roll</h4></div>
+      <a th:href="@{'/roll'}">
+         <img src="https://www.chefmarket.ru/blog/wp-content/uploads/2020/09/104870453_m-2000x1200.jpg"
+           class="shadow"  alt="Nan" style="width: 300px; height: 200px;">
+      </a>
+      </div>
+
+   </div>
+</div>
+</div>
+
+</html>
